@@ -69,8 +69,8 @@
                                           &none &kp LGUI &kp SPC       &kp ENT    &kp LALT &none
             >;
         };
-
-        combos {
+    };
+combos {
             compatible = "zmk,combos";
 
             combo_lower_raise {
@@ -79,8 +79,6 @@
                 bindings = <&mo adjust_layer>;
             };
         };
-    };
-
     macros {
         macro_arrow_function {
             bindings = <
