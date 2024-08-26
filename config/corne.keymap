@@ -75,7 +75,7 @@
 
             combo_lower_raise {
                 timeout-ms = <50>;
-                key-positions = <&mo LOWER &mo RAISE>;
+                key-positions = <&mo 1 &mo 2>;
                 bindings = <&mo adjust_layer>;
             };
         };
