@@ -12,7 +12,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                              default_layer {
+                default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -28,26 +28,31 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   | BT1 | BT2 | BT3 | BT4 | BT5 | BKSP |
-// | CTRL |  6  |  7  |  8  |  9  |  0  |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     | BTCLR|
-//                    |     | GUI | SPC |   | ENT | ALT |     |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Lower";
                         bindings = <
-                &kp TAB   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5       &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 5   &kp BSPC
-                &mt LCTRL ESC &kp N6   &kp N7   &kp N8   &kp N9   &kp N0       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &trans       &trans
-                &kp LSHFT &trans   &trans   &trans   &trans   &trans       &trans       &trans       &trans       &trans       &trans       &bt BT_CLR
-                          	        &trans &kp LGUI &kp SPC  &kp ENT &kp LALT &trans
+   &kp TAB   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5       &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 5   &kp BSPC
+   &mt LCTRL ESC &kp N6   &kp N7   &kp N8   &kp N9   &kp N0       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &trans       &trans
+   &kp LSHFT &trans   &trans   &trans   &trans   &trans       &trans       &trans       &trans       &trans       &trans       &bt BT_CLR
+                   &trans &kp LGUI &kp SPC  &kp ENT &kp LALT &trans
                         >;
                 };
 
                 raise_layer {
-                      display-name = "Raise";
-                         bindings = <
-                &kp TAB   &kp EXCL   &kp AT   &kp HASH   &kp DLLR   &kp PRCNT       &kp RCBR   &kp RBKT   &kp RPAREN   &kp TILDE   &kp BSLH   &kp BSPC
-                &mt LCTRL ESC &kp CIRC   &kp AMPS   &kp ASTRK  &kp EQL   &kp PLUS       &kp LCBR   &kp LBKT   &kp LPAREN   &kp PIPE    &kp COLON  &kp GRAVE
-                &kp LSHFT &trans   &trans   &kp FSLH   &kp UNDS   &kp MINS       &trans       &trans       &trans       &trans       &kp TILDE  &trans
-                                          &trans      &kp LGUI &kp SPC       &kp ENT    &kp LALT &trans
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        display-name = "Raise";
+                        bindings = <
+   &kp TAB   &kp EXCL   &kp AT   &kp HASH   &kp DLLR   &kp PRCNT       &kp RCBR   &kp RBKT   &kp RPAREN   &kp TILDE   &kp BSLH   &kp BSPC
+   &mt LCTRL ESC &kp CIRC   &kp AMPS   &kp ASTRK  &kp EQL   &kp PLUS       &kp LCBR   &kp LBKT   &kp LPAREN   &kp PIPE    &kp COLON  &kp GRAVE
+   &kp LSHFT &trans   &trans   &kp FSLH   &kp UNDS   &kp MINS       &trans       &trans       &trans       &trans       &kp TILDE  &trans
+                                   &trans      &kp LGUI &kp SPC       &kp ENT    &kp LALT &trans
                         >;
                 };
         };
