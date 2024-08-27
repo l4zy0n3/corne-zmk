@@ -23,10 +23,10 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp TILDE
-                  &mo 1 &kp LGUI  &kp RET &kp SPACE &kp RALT &mo 2
+                  &mo 2 &kp LGUI  &kp RET &kp SPACE &kp RALT &mo 1
                         >;
                 };
-                raise_layer {
+                lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   | BT1 | BT2 | BT3 | BT4 | BT5 | BKSP |
 // | CTRL |  6  |  7  |  8  |  9  |  0  |   | LFT | DWN |  UP | RGT |     |      |
@@ -41,13 +41,8 @@
                         >;
                 };
 
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  }  |  ]  |  )  |  ~  |  \  | BKSP |
-// | CTRL |  ^  |  &  |  *  |  =  |  +  |   |  {  |  [  |  (  | "|" |  :  |  `   |
-// | SHFT |     |     |  /  |  _  |  -  |   |     |     |     |     |  ~  |      |
-//                    |     | GUI | SPC |   | ENT | ALT |     |
-                        display-name = "Raise";
+                raise_layer {
+                      display-name = "Raise";
                          bindings = <
                 &kp TAB   &kp EXCL   &kp AT   &kp HASH   &kp DLLR   &kp PRCNT       &kp RCBR   &kp RBKT   &kp RPAREN   &kp TILDE   &kp BSLH   &kp BSPC
                 &mt LCTRL ESC &kp CIRC   &kp AMPS   &kp ASTRK  &kp EQL   &kp PLUS       &kp LCBR   &kp LBKT   &kp LPAREN   &kp PIPE    &kp COLON  &kp GRAVE
